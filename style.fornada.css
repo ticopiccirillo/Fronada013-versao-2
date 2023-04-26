@@ -1,0 +1,752 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+main, body {
+    width: 100vw;  
+}
+main, div #img-fundo{
+    background-image: url('imagens/img04.jpg');
+    background-position: center center;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    height: 100vh;
+    width: 100%;
+}
+
+main > a {
+    display: block;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: auto;
+    padding: 3%;
+    background-color: rgb(45, 148, 0);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.574);
+    font-weight: bold;
+    font-size: 2.5em;
+    border-radius: 25px;
+    text-align: center;
+    transition: 1s;
+}
+
+main > a:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 148, 0);
+}
+
+#logo {
+    width: auto;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+#header {
+    display: flex;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 90px;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.474);
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0;
+    gap: 50px;
+}
+
+#menu a {
+    display: block;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    transition: 1s;
+}
+
+#menu a:hover {
+    text-decoration: underline;   
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#imagem-main{
+    background-image: url('../fotos/pao-mesa.jpg');
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    height: 100vh;
+    width: 100vw;
+}
+
+div#img_fundo h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(252, 252, 252, 0);
+    font-size: 3em;
+    font-family: cursive;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 10% 0%;
+    width: 70vw;
+}
+
+div#img_fundo p {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(252, 252, 252, 0);
+    font-size: 2em;
+    font-family: cursive;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+    padding: 0% 4%;
+    width: 65vw;
+}
+
+#img_back {
+    background-image: url('imagens/banner1200.400.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#video-info {
+    display: flex;
+    margin: auto; 
+}
+
+iframe {
+    box-sizing: border-box;
+    width: 60vw;
+    height: 460px;
+    margin: 3%;
+    padding: 2%
+}
+
+#text-01 {
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    width: 55vw;
+    height: 460px;
+    padding: 2%;
+    margin: 3%;
+    font-size: 1.3em;
+
+}
+
+.fotos section {
+    width: auto;
+    display: block;
+}
+
+h1, h2 {
+    font-size: 3em;
+    width: 100vw;
+    color: #000000;
+    background-color: #a5a4a45d;
+    padding: 20px 0;
+    margin: 50px 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cards {
+    display: block ;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.cards-single img {
+    width: 20%;
+    height: 20%;
+    margin: 20px 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.533);
+    border-radius: 8px;
+}
+
+#dicas h3{
+    width: 100vw;
+    color: #ffffff;
+    background-color: #57310086;
+    padding: 20px 0;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+#dicas {
+    background-image: url('imagens/pao-mesa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99vw;
+}
+
+#dicas > p {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff3d;
+    text-shadow: 2px 2px 2px white;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.icones {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+}
+
+#comprar > a {
+    display: block;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 50px auto;
+    padding: 3%;
+    background-color: rgb(62, 198, 4);
+    color: rgb(255, 250, 250);
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.574);
+    font-weight: bold;
+    font-size: 2.5em;
+    border-radius: 25px;
+    text-align: center;
+    transition: 1s;
+}
+
+#comprar > a:hover {
+    transform: scale(1.1);
+    background-color: rgb(62, 198, 4);
+    color: #02400b;
+}
+
+#testemunhos {
+    width: 98vw;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.testemunhos p {
+    display: flex;
+    text-align: justify;
+    width: 80%;
+    padding: 3%;
+    height: auto;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foto-descricao {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.foto-descricao span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foto-testemunho{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Estilização do footer*/
+
+#footer {
+    width: 98vw;
+    padding-top: 1%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    margin: auto;
+    display: block;
+}
+
+.contatos h3 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    display: block;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.footer-conts div {
+    display: flex;
+    width: 98vw;
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+}
+
+div.contatos img{
+    filter: invert(1);
+    width: 5%;
+    height: 10%;
+    margin: 2%;
+}
+
+div.contatos {
+    display: block;
+    margin-top: 2%;
+    text-align: center;
+}
+
+footer,span {
+    font-size: 1em;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+/*Início do header - tentando alguma coisa parecido com mobile first*/
+
+@media (max-width: 768px) {
+a {
+    color: black;
+    text-decoration: none;
+    font-family: var(--fonte-sec);
+    transition: .6s;
+}
+
+a:hover {
+    background-color:#00000091;
+    color: #ceccd7;
+}
+
+main, div #img-fundo{
+    background-image: url('imagens/img04.jpg');
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    height: 100vh;
+    width: 100%;
+}
+
+#logo {
+    width: auto;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#header {
+    display: flex;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 90px;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.474);
+}
+
+#menu {
+    display: flex;
+    width: auto;
+    list-style: none;
+    gap: 3em;
+    margin: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 90px;
+    right: 0px;
+    color: #d9d3e8;
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#menu a {
+    display: block;
+    padding: 10px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#logo {
+    position: relative;
+    left: 40%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.519);
+}
+
+#nav.active #menu {
+    text-align: center;
+    height:auto;
+    visibility: visible;
+    overflow-y: auto;
+    color: #e8e2d3;
+}
+
+#menu a {
+    background-color:#ffffff;
+    color: #000000;
+    margin: auto;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#btn-mobile {
+    display: flex;
+    padding: .6em;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#hamburger {
+    border-top: 3px solid;
+    width: 30px;
+}
+
+#hamburger::after, #hamburger::before {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: currentColor;
+    display: block;
+    margin-top: 5px;
+    transition: .7s;
+    position: relative;
+}
+
+#nav.active #hamburger {
+    border-top: transparent;
+}
+
+#nav.active #hamburger::before {
+    transform: rotate(135deg);
+    width: 30px;
+}
+
+#nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    width: 30px;
+    top: -7px;
+}
+
+div#img_fundo h1 {
+    font-size: 2em;
+    padding-top: 150px;
+}
+
+div#img_fundo p {
+    font-size: 1.5em;
+    padding-top: 100px;
+    padding-bottom: 100px;
+} 
+
+main > a {
+    display: block;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 50px auto;
+    padding: 3%;
+    background-color: rgb(62, 198, 4);
+    color: rgb(255, 250, 250);
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.574);
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+main > a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #017813;
+}
+
+#container-main {
+    display: block;
+    height: 100%;
+    padding: 8px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #e8e2d3;
+}
+
+#conatiner-main, h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    background-color: #e8e2d3;
+    margin-top: 40px;
+    padding: 20px;
+    width: 100vw;
+}
+
+#video-info {
+    display: block;
+    width: 100vw;
+}
+
+iframe {
+    width: 95%;
+    height: 560px;
+    margin: 0% 2%;
+    display: block;
+}
+
+p {
+    font-size: 1.2em;
+    margin: auto;
+    background-color: white;
+}
+
+#img_back {
+  background-image: none;
+}
+
+#imagem-1 {
+    background-image: url('../fotos/pao-bonito.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 380px;
+    width: 95%;
+}
+
+.fotos section {
+    width: auto;
+    display: block;
+}
+
+h2 {
+    font-size: 2em;
+    color: #000000;
+    background-color: #a5a4a45d;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+#dicas h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 9, 9);
+    background-color: #ffffff57;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.612);
+}
+
+#dicas > p {
+    background-color: #ffffff57;
+    width: 80%;
+    padding: 4%;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.icones {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+}
+
+#comprar > a {
+    display: block;
+    width: 30%;
+    margin: auto;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 2%;
+    padding: 3%;
+    background-color: rgb(62, 198, 4);
+    color: rgb(255, 250, 250);
+    font-weight:  bold;
+    font-size: 1.5em;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+#comprar > a:hover {
+    transform: scale(1.1);
+    background-color: rgb(62, 198, 4);
+    color: #02400b;
+}
+
+#testemunhos {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.testemunhos p {
+    display: flex;
+    text-align: justify;
+    width: 80%;
+    height: auto;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foto-descricao {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.foto-descricao span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foto-testemunho{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Estilização do footer*/
+
+#footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: block;
+    width: 90vw;
+}
+
+  img.footer-img{
+    position: relative;
+    top: 51px;
+    width: 80vw;
+}
+
+.footer-img  {
+    display: block;
+    filter: invert(1);
+    border-radius: 50%;
+    width: 20%;
+}
+
+.contatos h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 20px;
+    display: block;
+}
+
+.contatos p {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+.footer-conts div {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+div.contatos img{
+    display: flex;
+    filter: invert(1);
+    width: 10%;
+    height: 10%;
+    margin: auto;
+    margin-bottom: 20px;
+   
+}
+
+div.contatos {
+    display: block;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+span {
+    font-size: .8em;
+}
+
+}
+
+@media (max-width: 548px) {
+
+iframe {
+    width: 95%;
+    margin: auto;
+}
+}
