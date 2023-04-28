@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Shadows+Into+Light&family=Source+Sans+Pro:ital,wght@1,300;1,600&display=swap');
+
+/* cores 
+    laranja #F27405
+    marrom esccuro #592B02
+    cinza fundo #F2F2F2
+    cinza destaque #E2EADF 
+    preto
+    braco
+*/
+
+/*fontes
+Fonte normal: font-family: Arial, Helvetica, sans-serif;
+fonte destaque: font-family: 'Dancing Script', cursive;
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +22,8 @@
 }
 
 main, body {
-    width: 100vw;  
+    width: 100vw; 
+    background-color: #F2F2F2; 
 }
 
 a {
@@ -33,7 +50,7 @@ main > a {
     text-decoration: none;
     margin: auto;
     padding: 3%;
-    background-color: rgb(45, 148, 0);
+    background-color: rgb(3, 160, 3);
     color: rgb(255, 255, 255);
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.574);
     font-weight: bold;
@@ -45,8 +62,6 @@ main > a {
 
 main > a:hover {
     transform: scale(1.1);
-    background-color: rgb(255, 255, 255);
-    color: rgb(45, 148, 0);
 }
 
 #logo {
@@ -62,7 +77,7 @@ main > a:hover {
     width: 100vw;
     height: 90px;
     margin: auto;
-    padding: 10px;
+    padding: 10px 0;
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
@@ -70,7 +85,7 @@ main > a:hover {
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: rgb(247, 126, 40);
+    background-color: #F27405;
 }
 
 #nav {
@@ -121,13 +136,13 @@ div#img_fundo h1{
     color: white;
     text-shadow: 1px 1px 1px black;
     background-color: rgba(252, 252, 252, 0);
-    font-size: 3em;
-    font-family: cursive;
+    font-size: 5em;
+    font-family: 'Dancing Script', cursive;
     font-weight: bold;
     align-items: center;
     text-align: center;
     margin: auto;
-    padding-top: 7%;
+    padding-top: 6%;
     width: 70vw;
 }
 
@@ -135,8 +150,8 @@ div#img_fundo p {
     color: white;
     text-shadow: 1px 1px 1px black;
     background-color: rgba(252, 252, 252, 0);
-    font-size: 2em;
-    font-family: cursive;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     align-items: center;
     text-align: center;
@@ -146,7 +161,7 @@ div#img_fundo p {
 }
 
 h1 {
-    padding: 2%;
+    padding: 2%;   
 }
 
 .info {
@@ -190,28 +205,28 @@ h1 {
     font-size: 3em;
     width: 100vw;
     color: #000000;
-    background-color: #a5a4a45d;
+    background-color: #4bb125 ;
     margin: 50px 0px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 5em;
     width: 100vw;
-    color: #000000;
-    background-color: #a5a4a45d;
+    color: #592B02;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.484);
+    background-color: #E2EADF;
     padding: 20px 0;
     margin: 50px 0px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Dancing Script', cursive;
 }
 
 #cards {
     display: block ;
     width: 100%;
     margin: auto;
-    
 }
 
 .cards-single img {
@@ -225,28 +240,36 @@ h2 {
 #dicas h3{
     width: 100vw;
     color: #ffffff;
-    background-color: #57310086;
+    background-color: #592B02;
     padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     text-align: center;
     text-shadow: 1px 2px 2px rgb(0, 0, 0);
 }
 
-#dicas {
+.cuidados {
+    display: flex;
+    width: 100vw;
+    height: 300px;
+}
+
+/*#dicas {
     background-image: url('imagens/pao-mesa.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #ceccd7;
     width: 100vw;
-}
+}*/
 
-#dicas > p {
+.cuidados > p {
+    display: block;
     color: rgb(0, 0, 0);
-    background-color: #ffffff3d;
-    text-shadow: 2px 2px 2px white;
-    width: 80vw;
-    margin: 0 auto;
-    padding: 5%;
+    width: 50vw;
+    height: auto;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
     font-size: 1.5em;
     font-weight: bold;
     letter-spacing: 2px;
@@ -254,9 +277,9 @@ h2 {
 
 .icones {
     display: block;
-    width: 80px;
-    height: 80px;
-    margin: 20px auto;
+    width: 180px;
+    height: 180px;
+    margin: auto;
 }
 
 #comprar > a {
@@ -266,7 +289,7 @@ h2 {
     text-decoration: none;
     margin: 50px auto;
     padding: 3%;
-    background-color: rgb(62, 198, 4);
+    background-color: rgb(3, 160, 3);
     color: rgb(255, 250, 250);
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.574);
     font-weight: bold;
@@ -278,38 +301,48 @@ h2 {
 
 #comprar > a:hover {
     transform: scale(1.1);
-    background-color: rgb(62, 198, 4);
-    color: #02400b;
 }
 
 #testemunhos {
-    width: 98vw;
+    display: block;
+    width: 100vw;
     height: auto;
     margin: auto;
-    display: block;
+    padding-bottom: 3%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.testemunhos p {
-    display: flex;
-    text-align: justify;
-    width: 80%;
-    padding: 3%;
+.testemunhos {
+    display: block;
+    width: 450px;
     height: auto;
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
-.foto-descricao {
+.testemunhos p, span {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    width: auto;
+    margin: auto;
+    padding: 4%;
+    height: auto;
+    font-size: 1.5em;
+}
+
+.foto-testemunho {
     display: block;
-    width: 80%;
+    width: auto;
     height: auto;
     margin: auto;
     text-align: center;
-    padding-bottom: 40px;
-}
-
-.foto-descricao span {
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .foto-testemunho{
@@ -320,58 +353,76 @@ h2 {
     align-content: center;
 }
 
-/* Estilização do footer*/
-
 #container {
     width: 100vw;
-    display: inline-flex;
+    height: auto;
+    display: flex;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
 }
 
-.contatos h3 {
+.intro-container {
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+.intro-contatos h3 {
+    display: inline-block;
     background-color: black;
     color: white;
     font-weight: bold;
     font-size: 2em;
-    padding: 1%;
-    margin-bottom: 2%;
+    padding-bottom: 3%;
 }
 
-.footer-conts div {
+.intro-contatos {
     display: block;
-    width: auto;
+    width: 50%;
+    height: 300px;
     margin: auto;
     padding: 2% 0;
+    text-align: center;
 }
 
-section.contatos img{
+.icone-contato {
     filter: invert(1);
     width: 5%;
     height: 10%;
     margin: 2%;
 }
 
-section.contatos {
-    display: inline-block;
-    margin-top: 2%;
-}
-
 .rodape {
-    display: block;
-    font-size: 1em;
+    display: flex;
+    font-size: .8em;
     width: 100vw;
     background-color: #000000;
+    color: white;
+    text-align: center;
+    margin: auto;
 }
 
 /*Início do header - tentando alguma coisa parecido com mobile first*/
+
+/* cores 
+    laranja #F27405
+    marrom esccuro #592B02
+    cinza fundo #F2F2F2
+    cinza destaque #E2EADF 
+    preto
+    braco
+*/
+
+/*fontes
+Fonte normal: font-family: Arial, Helvetica, sans-serif;
+fonte destaque: font-family: 'Dancing Script', cursive;
+*/
 
 @media (max-width: 768px) {
 a {
     color: black;
     text-decoration: none;
-    font-family: var(--fonte-sec);
     transition: .6s;
 }
 
@@ -380,9 +431,14 @@ a:hover {
     color: #ceccd7;
 }
 
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
 main, div #img-fundo{
     background-image: url('imagens/img04.jpg');
-    background-position: center center;
+    background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment: local;
@@ -409,7 +465,7 @@ main, div #img-fundo{
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: rgb(247, 126, 40);
+    background-color: #F27405;
 }
 
 #menu {
@@ -431,7 +487,6 @@ main, div #img-fundo{
     z-index: 1000;
     visibility: hidden;
     overflow-y: hidden;
-    background-color: rgb(247, 126, 40);
 }
 
 #menu a {
@@ -452,17 +507,18 @@ main, div #img-fundo{
 #nav.active #menu {
     display: block;
     text-align: center;
-    height: 195px;
+    height: 198px;
     visibility: visible;
     overflow-y: auto;
-    color: #e8e2d3;
+    color: #F27405;
+    overflow-y: hidden;
 }
 
 #menu a {
-    background-color:#ffffff;
+    background-color:#F27405;
     color: #000000;
     margin: auto;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 3px solid #592B02;
 }
 
 #menu a:hover {
@@ -479,7 +535,7 @@ main, div #img-fundo{
 }
 
 #hamburger {
-    border-top: 3px solid;
+    border-top: 3px solid black;
     width: 30px;
 }
 
@@ -510,29 +566,22 @@ main, div #img-fundo{
 }
 
 div#img_fundo h1 {
-    font-size: 2em;
+    font-size: 3em;
     padding-top: 20%;
+    padding-bottom: 5%;
+    margin: auto;
 }
 
 div#img_fundo p {
     font-size: 1.5em;
     padding-bottom: 10%;
+    margin: auto;
 } 
 
 main > a {
-    display: block;
-    width: 30%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    margin: 50px auto;
-    padding: 3%;
-    background-color: rgb(62, 198, 4);
-    color: rgb(255, 250, 250);
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.574);
-    font-weight: bold;
-    font-size: 1.5em;
-    border-radius: 25px;
-    transition: 1s;
+    width: 40%;
+    height: auto;
+    font-size: 2em;
 }
 
 main > a:hover {
@@ -540,35 +589,16 @@ main > a:hover {
     color: #017813;
 }
 
-#container-main {
-    display: block;
-    height: 100%;
-    padding: 8px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #e8e2d3;
-}
-
-/*#conatiner-main, h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 2.5em;
-    background-color: #e8e2d3;
-    margin-top: 40px;
-   
-    width: 100vw;
-}*/
-
-h1 {
+/*h1 {
     font-size: 2em;
     width: 100vw;
-    color: #000000;
+    color: #f41313;
     background-color: #a5a4a45d;
     margin: 50px 0px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 3% 0;
-}
+}*/
 
 .info {
     display: block;
@@ -576,20 +606,30 @@ h1 {
     width: 100vw;
 }
 
-.video-descricao {
+.info h2 {
+    font-size: 2.5em;
+    color: #592B02;
+    background-color: #E2EADF;
+    text-align: center;
     display: block;
+    width: 100%;
+}
+
+.video-descricao {
+    display: flex;
     width: 90vw;
     margin: auto;
 }
 
 iframe {
-    width: 90%;
-    height: 250px;  
+    width: 50vw;
+    height: auto;
 }
 
 .text-01 {
-    width: 90%;
+    width: 50vw;
     height: auto;
+    font-size: 1.2em;
 }
 
 #produtos section {
@@ -597,14 +637,32 @@ iframe {
     display: block;
 }
 
-#imagem-1 {
-    background-image: url('../fotos/pao-bonito.webp');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 380px;
-    width: 95%;
+h1 {
+    font-size: 3em;
+    width: 100vw;
+    color: #000000;
+    background-color: #4bb125 ;
+    margin: 50px 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+#cards {
+    display: block ;
+    width: 100%;
+    margin: auto;
+}
+
+.cards-single img {
+    width: 20%;
+    height: 20%;
+    margin: 20px 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.533);
+    border-radius: 8px;
 }
 
 .fotos section {
@@ -612,168 +670,94 @@ iframe {
     display: block;
 }
 
-h2 {
-    font-size: 2em;
-    color: #000000;
-    background-color: #a5a4a45d;
-    text-align: center;
-    display: block;
-    width: 100%;
-}
-
 #dicas h3{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(9, 9, 9);
-    background-color: #ffffff57;
+    width: 100vw;
+    color: #ffffff;
+    background-color: #592B02;
     padding: 20px 0;
-    margin-top: 20px;
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.612);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
 }
 
-#dicas > p {
-    background-color: #ffffff57;
-    width: 80%;
-    padding: 4%;
-    color: black;
-    font-weight: bold;
-    font-size: 1em;
+.cuidados {
+    display: block;
+    width: 100vw;
+    height: auto;
+    padding: 2%;
+}
+
+.cuidados > p {
+    width: 80vw;
+    font-size: 1.2em;
 }
 
 .icones {
     display: block;
-    width: 80px;
-    height: 80px;
-    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 2%;
 }
 
 #comprar > a {
+    width: 40%;
+}
+
+.testemunhos p, span {
     display: block;
-    width: 30%;
-    margin: auto;
-    text-decoration: none;
-    margin: auto;
-    margin-bottom: 2%;
-    padding: 3%;
-    background-color: rgb(62, 198, 4);
-    color: rgb(255, 250, 250);
-    font-weight:  bold;
-    font-size: 1.5em;
-    border-radius: 25px;
-    transition: 1s;
-}
-
-#comprar > a:hover {
-    transform: scale(1.1);
-    background-color: rgb(62, 198, 4);
-    color: #02400b;
-}
-
-#testemunhos {
-    width: 100vw;
-    height: auto;
-    margin: auto;
-    display: block;
-}
-
-.testemunhos p {
-    display: flex;
-    text-align: justify;
-    width: 80%;
-    height: auto;
     font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.foto-descricao {
-    display: block;
-    width: 80%;
-    height: auto;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-.foto-descricao span {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.foto-testemunho{
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
 }
 
 /* Estilização do footer*/
 
-#footer {
-    text-align: center;
+#container {
+    display: flex;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(0, 0, 0);
     color: white;
-    display: block;
+    display: flex;
     width: 100vw;
     overflow-x: hidden;
 }
 
-  img.footer-img{
-    position: relative;
-    top: 51px;
-    width: 80vw;
+.footer-conts{
+    display: flex;
+    width: 50%;
+   text-align: center;
 }
 
-.footer-img  {
+.contatos {
     display: block;
-    filter: invert(1);
-    border-radius: 50%;
-    width: 20%;
+    width: 50%;
 }
 
 .contatos h3 {
-    color: white;
-    font-weight: bold;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
-    margin-top: 20px;
-    display: block;
-}
-
-.contatos p {
-    background-color: rgb(0, 0, 0);
-    display: block;
-    margin: auto;
-    font-size: 1.5em;
-}
-
-.footer-conts div {
-    display: block;
-    width: 90%;
-    margin: 0;
-}
-
-div.contatos img{
-    display: flex;
-    filter: invert(1);
-    width: 10%;
-    height: 10%;
-    margin: auto;
-    margin-bottom: 20px;
-   
-}
-
-div.contatos {
-    display: block;
-    margin-top: 30px;
-    background-color: rgb(0, 0, 0);
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
-span {
-    font-size: .8em;
+.icone-contato {
+    width: 8%;
+    filter: invert(1);
+    margin: 1%;
+    padding: 2%;
+}
+.rodape {
+   color: white;
+    text-align: center;
+    display: inline-block;
 }
 
+.rodape span {
+    font-size: 1em;
+    padding: 2%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
 }
 
 @media (max-width: 548px) {
