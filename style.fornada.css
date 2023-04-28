@@ -136,7 +136,7 @@ div#img_fundo h1{
     color: white;
     text-shadow: 1px 1px 1px black;
     background-color: rgba(252, 252, 252, 0);
-    font-size: 5em;
+    font-size: 4.5em;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     align-items: center;
@@ -160,9 +160,9 @@ div#img_fundo p {
     width: 65vw;
 }
 
-h1 {
+/*h1 {
     padding: 2%;   
-}
+}*/
 
 .info {
     display: block;
