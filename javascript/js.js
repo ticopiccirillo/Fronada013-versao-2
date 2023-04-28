@@ -10,12 +10,36 @@ nav.classList.toggle('active')
 }
 
 
+/*const menuLinks = document.querySelectorAll('.menu a[herf^="#"]');
+
+function scrollToSection (event) {
+    event.preventDefaul();
+    const element = event.target;
+    const id = element.getAttribute("href");
+    console.log(id);
+}
+menuLinks.forEach((link) => {
+    link.addEventListener('click', scrollToSection);
+});*/
+
 //Funções scroll
-const menuItens = document.querySelectorAll('#menu a');
+//Identificar o click no menu
+//verificar o item quw foi clicado e fazer referencia ao alvo
+//verificar a distancia entre o alvo e o topo
+//animar o scroll ate o alvo
+
+const menuItens = document.querySelectorAll('.menu a');
 
 menuItens.forEach(item => {
     item.addEventListener('click', scrollToIdOnClick);
-})
+});
+
+function scrollToIdOnClick(event.target) {
+    console.log('clicou');
+};    
+
+item.addEventListener('click', scrollToIdOnClick);
+});
 
 function getScrollTopByHref(element) {
     const id = element.getAttribute('href');
@@ -30,10 +54,8 @@ function scrollToIdOnClick(event) {
     }
 
 function scrollToPosition(){
-    windouw.scroll({
+    window.scroll({
         top: to,
         behavior: "smooth",
     });
-};
-
-
+}
