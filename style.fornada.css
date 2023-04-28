@@ -254,14 +254,6 @@ h2 {
     height: 300px;
 }
 
-/*#dicas {
-    background-image: url('imagens/pao-mesa.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #ceccd7;
-    width: 100vw;
-}*/
-
 .cuidados > p {
     display: block;
     color: rgb(0, 0, 0);
@@ -402,22 +394,6 @@ h2 {
     text-align: center;
     margin: auto;
 }
-
-/*Início do header - tentando alguma coisa parecido com mobile first*/
-
-/* cores 
-    laranja #F27405
-    marrom esccuro #592B02
-    cinza fundo #F2F2F2
-    cinza destaque #E2EADF 
-    preto
-    braco
-*/
-
-/*fontes
-Fonte normal: font-family: Arial, Helvetica, sans-serif;
-fonte destaque: font-family: 'Dancing Script', cursive;
-*/
 
 @media (max-width: 768px) {
 a {
