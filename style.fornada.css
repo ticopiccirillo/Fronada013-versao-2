@@ -395,10 +395,15 @@ h2 {
 
 .rodape {
     display: flex;
-    font-size: .8em;
+    margin: auto;
     width: 100vw;
-    background-color: #000000;
+    
+}
+
+.rodape span {
+    background-color: #017813;
     color: white;
+    font-size: .8em;
     text-align: center;
     margin: auto;
 }
