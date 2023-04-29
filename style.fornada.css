@@ -68,7 +68,6 @@ main > a:hover {
     width: auto;
     height: 70px;
     border-radius: 50%;
-    margin-left: 20px;
 }
 
 #header {
@@ -426,6 +425,8 @@ main, div #img-fundo{
     width: auto;
     height: 70px;
     border-radius: 50%;
+    position: relative;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.519);
 }
 
 #header {
@@ -474,10 +475,13 @@ main, div #img-fundo{
     display: block;
 }
 
-#logo {
-    position: relative;
-    left: 40%;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.519);
+#btn-mobile {
+    display: flex;
+    padding: .6em;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 #nav.active #menu {
@@ -499,15 +503,6 @@ main, div #img-fundo{
 
 #menu a:hover {
     text-decoration: underline;
-}
-
-#btn-mobile {
-    display: flex;
-    padding: .6em;
-    font-size: 1.5em;
-    border: none;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0);
 }
 
 #hamburger {
@@ -542,14 +537,14 @@ main, div #img-fundo{
 }
 
 div#img_fundo h1 {
-    font-size: 3em;
-    padding-top: 20%;
+    font-size: 2em;
+    padding-top: 30%;
     padding-bottom: 5%;
     margin: auto;
 }
 
 div#img_fundo p {
-    font-size: 1.5em;
+    font-size: 1em;
     padding-bottom: 10%;
     margin: auto;
 } 
@@ -736,10 +731,169 @@ h2 {
 }
 }
 
-@media (max-width: 548px) {
+@media (max-width: 320px) {
+    a {
+        color: black;
+        text-decoration: none;
+        transition: .6s;
+    }
+    
+    a:hover {
+        background-color:#00000091;
+        color: #ceccd7;
+    }
 
-iframe {
-    width: 95%;
-    margin: auto;
-}
-}
+    #header {
+        height: 50px;
+        justify-content: space-between;
+    }
+
+    #logo {
+        height: 35px;
+        margin-left: 40%;
+    }
+
+    #hamburger {
+        border-top: 3px solid black;
+        width: 20px;
+    }
+    
+    #hamburger::after, #hamburger::before {
+        content: '';
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        display: block;
+        margin-top: 5px;
+        transition: .7s;
+        position: relative;
+    }
+    
+    #nav.active #hamburger {
+        border-top: transparent;
+    }
+    
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+        width: 20px;
+    }
+    
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        width: 20px;
+        top: -7px;
+    }
+
+    #menu {
+        font-size: 1em;
+        top: 50px;
+    }
+
+    main {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    main, div #img-fundo{
+        background-size: cover;
+    }
+   
+    div#img_fundo h1 {
+        font-size: 1.2em;
+        padding-top: 25%;
+        padding-bottom: 5%;
+    }
+    
+    div#img_fundo p {
+        font-size: .6em;
+        padding-bottom: 10%;  
+    } 
+    
+    main > a {
+        width: 50%;
+        padding: 3%;
+        font-size: 1.5em;
+    }
+        
+    .info h2 {
+        font-size: 1.3em;
+    }
+    
+    .video-descricao {
+        display: block;
+        width: 95vw;
+    }
+    
+    iframe {
+        width: 90vw;
+    }
+    
+    .text-01 {
+        width: 90vw;
+        font-size: .8em;
+    }
+    
+    #produtos section {
+        width: auto;
+        display: block;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    #dicas h3{
+        font-size: 1.2em; 
+    }
+    
+    .cuidados > p {
+        width: 90vw;
+        font-size: .6em;
+    }
+    
+    .icones {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #comprar > a {
+        width: 50%;
+        padding: 3%;
+        font-size: 1.5em;
+    }
+
+    .testemunhos {
+        width: 90vw;
+    }
+    
+    .testemunhos p, span {
+        width: 80vw;
+        padding: 4%;
+        font-size: .8em;
+    }
+    
+    /* Estilização do footer*/
+    
+    .intro-contatos h3 {
+        font-size: 1.2em;
+    }
+    
+    .intro-contatos {
+        height: auto;
+    }
+    
+    .intro-contatos p {
+        font-size: .5em;
+    }
+    
+    .icone-contato {
+        filter: invert(1);
+        width: 8%;
+        height: 10%;
+        margin: 2%;
+    }
+    
+    .rodape {
+        font-size: .5em;
+    }
+    }
