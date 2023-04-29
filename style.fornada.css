@@ -68,6 +68,7 @@ main > a:hover {
     width: auto;
     height: 70px;
     border-radius: 50%;
+    margin-left: 40%;
 }
 
 #header {
@@ -78,30 +79,28 @@ main > a:hover {
     margin: auto;
     padding: 10px 0;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 10px;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     background-color: #F27405;
+    
 }
 
 #nav {
     display: flex;
     justify-content: space-between;
+    margin-right: 3%;
 }
 
 #menu {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     font-weight: bold;
-    padding: 0;
-    gap: .5em;
 }
 
 #menu a {
@@ -124,7 +123,7 @@ main > a:hover {
 #imagem-main{
     background-image: url('../fotos/pao-mesa.jpg');
     background-position: center center;
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: local;
     height: 100vh;
@@ -135,7 +134,7 @@ div#img_fundo h1{
     color: white;
     text-shadow: 1px 1px 1px black;
     background-color: rgba(252, 252, 252, 0);
-    font-size: 4.5em;
+    font-size: 3em;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     align-items: center;
@@ -149,13 +148,13 @@ div#img_fundo p {
     color: white;
     text-shadow: 1px 1px 1px black;
     background-color: rgba(252, 252, 252, 0);
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     align-items: center;
     text-align: center;
     margin: 30px auto;
-    padding: 4% 0%;
+    padding: 3% 0%;
     width: 65vw;
 }
 
@@ -395,26 +394,11 @@ h2 {
 }
 
 @media (max-width: 768px) {
-a {
-    color: black;
-    text-decoration: none;
-    transition: .6s;
-}
-
-a:hover {
-    background-color:#00000091;
-    color: #ceccd7;
-}
-
-main {
-    width: 100vw;
-    height: 100vh;
-}
 
 main, div #img-fundo{
     background-image: url('imagens/img04.jpg');
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: local;
     height: 100vh;
@@ -423,7 +407,7 @@ main, div #img-fundo{
 
 #logo {
     width: auto;
-    height: 70px;
+    height: 60px;
     border-radius: 50%;
     position: relative;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.519);
@@ -433,11 +417,11 @@ main, div #img-fundo{
     display: flex;
     box-sizing: border-box;
     width: 100vw;
-    height: 90px;
+    height: 70px;
     margin: auto;
     padding: 10px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -451,13 +435,13 @@ main, div #img-fundo{
     gap: 3em;
     margin: auto;
     margin-right: auto;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     display: block;
     position: absolute;
     width: 100%;
     height: 0px;
-    top: 90px;
+    top: 70px;
     right: 0px;
     color: #d9d3e8;
     transition: .6s;
@@ -538,7 +522,7 @@ main, div #img-fundo{
 
 div#img_fundo h1 {
     font-size: 2em;
-    padding-top: 30%;
+    padding-top: 15%;
     padding-bottom: 5%;
     margin: auto;
 }
@@ -559,17 +543,6 @@ main > a:hover {
     background-color: rgb(255, 255, 255);
     color: #017813;
 }
-
-/*h1 {
-    font-size: 2em;
-    width: 100vw;
-    color: #f41313;
-    background-color: #a5a4a45d;
-    margin: 50px 0px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 3% 0;
-}*/
 
 .info {
     display: block;
@@ -598,7 +571,7 @@ iframe {
 }
 
 .text-01 {
-    width: 50vw;
+    width: 45vw;
     height: auto;
     font-size: 1.2em;
 }
@@ -661,7 +634,7 @@ h2 {
 
 .cuidados > p {
     width: 80vw;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .icones {
@@ -732,16 +705,6 @@ h2 {
 }
 
 @media (max-width: 320px) {
-    a {
-        color: black;
-        text-decoration: none;
-        transition: .6s;
-    }
-    
-    a:hover {
-        background-color:#00000091;
-        color: #ceccd7;
-    }
 
     #header {
         height: 50px;
@@ -801,17 +764,17 @@ h2 {
     div#img_fundo h1 {
         font-size: 1.2em;
         padding-top: 25%;
-        padding-bottom: 5%;
+        padding-bottom: 20%;
     }
     
     div#img_fundo p {
         font-size: .6em;
-        padding-bottom: 10%;  
+        padding-bottom: 20%;  
     } 
     
     main > a {
         width: 50%;
-        padding: 3%;
+        padding: 4%;
         font-size: 1.5em;
     }
         
@@ -821,15 +784,15 @@ h2 {
     
     .video-descricao {
         display: block;
-        width: 95vw;
+        width: 85vw;
     }
     
     iframe {
-        width: 90vw;
+        width: 85vw;
     }
     
     .text-01 {
-        width: 90vw;
+        width: 80vw;
         font-size: .8em;
     }
     
@@ -863,11 +826,11 @@ h2 {
     }
 
     .testemunhos {
-        width: 90vw;
+        width: 80vw;
     }
     
     .testemunhos p, span {
-        width: 80vw;
+        width: 70vw;
         padding: 4%;
         font-size: .8em;
     }
@@ -875,13 +838,13 @@ h2 {
     /* Estilização do footer*/
     
     .intro-contatos h3 {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     
     .intro-contatos {
         height: auto;
     }
-    
+
     .intro-contatos p {
         font-size: .5em;
     }
@@ -894,6 +857,7 @@ h2 {
     }
     
     .rodape {
-        font-size: .5em;
+        font-size: .4em;
+        margin: auto;
     }
     }
